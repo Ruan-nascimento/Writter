@@ -29,6 +29,14 @@ A simple web app to share and discover quotes and thoughts. Developed using **Ja
 - **View "Writers" Online**: Check who is online
 - **Search**: Look for specific posts of interest
 
+## 💻 **Contributing**
+
+Feel free to contribute to the project by submitting improvements or suggestions. You can open an **issue** or submit a **pull request** to propose changes.
+
+## 📝 **License**
+
+This project is licensed for personal use and is open to modification by anyone interested in exploring or enhancing it.
+
 ## 📋 **Installation**
 
 To run the project locally, follow these steps:
@@ -45,12 +53,5 @@ To run the project locally, follow these steps:
   ```bash
   npm run dev
 
-## 💻 **Contributing**
-
-Feel free to contribute to the project by submitting improvements or suggestions. You can open an **issue** or submit a **pull request** to propose changes.
-
-## 📝 **License**
-
-This project is licensed for personal use and is open to modification by anyone interested in exploring or enhancing it.
 
 
