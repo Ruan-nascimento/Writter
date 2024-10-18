@@ -23,7 +23,7 @@ A simple web app to share and discover quotes and thoughts. Developed using **Ja
 ## ⚙️ **Features**
 
 - **Sign Up and Login**: Register or log in to access the app
-- **Posts**: Write and view posts, like, comment, and rate with stars
+- **Posts**: Write and view posts, like, comment, and give a star if you like the post
 - **Profile Settings**: Customize your photo and personal information
 - **Save Posts**: Save your favorite posts to access them later
 - **View "Writers" Online**: Check who is online
@@ -35,7 +35,7 @@ To run the project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/writter.git
+   git clone https://github.com/your-user-name/Writter.git
 
 2. Install dependencies:
    ```bash
