@@ -14,3 +14,9 @@ body {
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+.default-shadow{
+  -webkit-box-shadow: 18px 10px 45px -15px rgba(0,0,0,0.75);
+  -moz-box-shadow: 18px 10px 45px -15px rgba(0,0,0,0.75);
+  box-shadow: 18px 10px 45px -15px rgba(0,0,0,0.75);
+}

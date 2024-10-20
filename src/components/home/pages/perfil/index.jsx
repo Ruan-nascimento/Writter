@@ -1,33 +1,93 @@
 import { useState } from "react";
 import { Input } from "./inputs";
+import { List } from "./list";
+import { ButtonsOut } from "./buttonsOut";
+import { footerText } from "../../../../utils/variables";
 
 export function Perfil() {
 
-  const handleEditMode = (e) => {
-    e.preventDefault()
-    setDisabled(!disabled)
-  }
 
-  const [disabled, setDisabled] = useState(true)
-  const biography = "João Silva é um desenvolvedor de software apaixonado com 5 anos de experiência na criação de soluções inovadoras para desafios técnicos. Com um sólido entendimento em várias linguagens de programação, incluindo JavaScript, Python e Java, João tem se destacado em projetos de desenvolvimento web e mobile."
+  const [image, setImage] = useState(null)
+  const [preview, setPreview] = useState(null)
+  const handleImageChange = (e) => {
+    const file = e.target.files[0]
+    if (file) {
+      setImage(file)
+      const reader = new FileReader();
+      
+      reader.onloadend = () => {
+        setPreview(reader.result)
+      }
+
+      reader.readAsDataURL(file)
+    }}
 
   return(
     <div className="w-full h-full rounded-xl bg-gray-800 p-5 no-scrollbar overflow-auto bg-scroll">
       <div className="flex justify-between h-full gap-10">
         
-        <div className="flex flex-col gap-4 max-w-3pc">
-          <img className="border-4 border-light-yellow cursor-pointer w-72 h-72 rounded-full object-cover" src='https://picsum.photos/1920/1080?random=2334' alt='Ruan' />
-          <textarea placeholder={biography} disabled={disabled} className="cursor-text resize-none flex-1 overflow-auto no-scrollbar rounded-lg bg-gray-950 p-4 text-sm"></textarea>
-        </div>
+        <section className="flex flex-col gap-4 w-3pc justify-center max-w-3pc">
+
+          <div className="relative flex w-full h-72 items-center justify-center">
+            <input
+              title="Selecione uma Foto"
+              className="absolute rounded-full bg-transparent w-full h-full  opacity-0 cursor-pointer"
+              type="file" accept="image/*" onChange={handleImageChange}/>
+              
+              <div className="w-full h-full flex items-center justify-center">
+                {preview ? (
+                <img 
+                className="w-full h-full rounded-full border-4  border-light-yellow object-cover"
+                src={preview} 
+                alt="Image Preview" 
+              />
+              ) : 
+              (
+                <img 
+                className="w-full h-full rounded-full border-4  border-light-yellow object-cover"
+                src="src\assets\Perfil default.jpg" 
+                alt="Image Preview" 
+              />
+              )}
+              </div>
+
+          </div>
+
+
+          <textarea placeholder="biografia" className="outline-none cursor-text border-2 border-transparent resize-none flex-1 overflow-auto no-scrollbar rounded-lg bg-gray-950 p-4 text-sm focus:border-2 focus:border-light-yellow"></textarea>
+
+        </section>
         
-        <div className="border-2 border-light-yellow p-4 flex-1 rounded-lg">
-          <form className="flex flex-col gap-6 flex-1">
-            <Input disabled={disabled} type={'text'} placeholder="Ruan Carlos"/>
-            <Input disabled={disabled} type={'email'} placeholder="ruan@gmail.com"/>
-            <input disabled={disabled} className="outline-none max-w-5pc p-3 rounded-lg bg-gray-900 flex items-center justify-center" type="date" />
-            <button onClick={(e) => {handleEditMode(e)}} className="h-12 w-52 rounded-lg self-end text-gray-900 font-semibold text-lg bg-light-yellow">{disabled ? 'Editar' : 'Salvar'}</button>
-          </form>
-        </div>
+        <section className="border-2 border-light-yellow p-4 flex-1 rounded-lg flex flex-col gap-10">
+
+              <div className="w-full h-2pc flex justify-around items-center">
+                <List num={25} title="Curtidas"/>
+                <List num={5} title="Posts"/>
+                <List num={15} title="Salvos"/>
+              </div>
+
+              <div className="flex gap-4">
+                <Input placeholder={`Ruan`} type={`text`}/>
+                <Input placeholder={`Carlos`} type={`text`}/>
+              </div>
+              <div className="flex gap-4">
+                <Input type={'text'} placeholder="@Shottinn"/>
+                <Input type={`date`}/>
+              </div>
+              <div className="flex gap-4">
+                <Input evite={true} placeholder={`ruan@gmail.com`} type={`email`}/>
+                <Input evite={true} placeholder={`************`} type={`password`}/>
+              </div>
+
+              <div className="flex gap-4 justify-around">
+                <ButtonsOut save name={`Salvar`}/>
+                <ButtonsOut name={`Excluir Conta`}/>
+                <ButtonsOut name={`Sair`}/>
+              </div>
+
+              <p className="w-full h-full overflow-hidden text-xs text-light-yellow">{footerText}</p>
+
+        </section>
 
       </div>
     </div>

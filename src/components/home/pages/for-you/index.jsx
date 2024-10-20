@@ -14,8 +14,8 @@ export function ForYou({textPost, hashPost}) {
       hashtags={hashPost}
       img={`https://picsum.photos/1920/1080?random=${Math.floor(Math.random() * 1000)/6}`}
       username="Ruan Carlos da Silva"
-      commentsNum={2}
-      starsNum={20}
+      commentsNum={2300}
+      starsNum={1330300}
       />
     </div>
   )
