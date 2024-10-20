@@ -30,6 +30,7 @@ export function Home() {
   return (
     <section className="flex gap-3 h-full">
       <BrowserRouter>
+
         <div className="flex flex-1 flex-col gap-2 h-full"> 
           <Header/>
           <Routes>
@@ -40,10 +41,12 @@ export function Home() {
             <Route path='/perfil' element={<Perfil/>}/>
           </Routes>
         </div>
-        <div className="flex flex-col gap-3 w-2pc max-w-2pc max-h-full">
+
+        <div className="hidden 850:flex flex-col gap-3 w-2pc max-w-2pc max-h-full">
           <FindUser/>
           <TopHashTags copied={copied} setCopied={setCopied}/>
         </div>
+
       </BrowserRouter>
     </section>
   )

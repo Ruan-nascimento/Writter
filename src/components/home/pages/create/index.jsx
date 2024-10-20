@@ -43,7 +43,7 @@ export function Create({setPost, setHashTags}) {
 
 
   return(
-    <div className="w-full h-full rounded-xl bg-gray-800 p-5 no-scrollbar overflow-auto bg-scroll flex-col justify-between">
+    <div className="pb-10 850:w-full h-full rounded-xl bg-gray-800 p-5 no-scrollbar overflow-auto bg-scroll flex-col justify-between">
       <form className="flex w-full h-8pc flex-col">
         
         <div className="flex flex-1 flex-col gap-4">
@@ -55,9 +55,9 @@ export function Create({setPost, setHashTags}) {
         </form>
 
         <div className="flex h-2pc items-end justify-between">
-          <button onClick={(e) => handleClearPost(e)} className="flex gap-2 py-3 px-10 bg-zinc-700 w-44 rounded-lg duration-200 ease-in-out hover:opacity-80 active:scale-50 font-semibold"><FaTrash size={20} color="white"/>Limpar</button>
+          <button onClick={(e) => handleClearPost(e)} className="flex items-center p-0 justify-center w-20 h-20 rounded-full sm:flex py-3 px-10 bg-zinc-700 sm:w-44 sm:rounded-lg duration-200 ease-in-out hover:opacity-80 active:scale-50 font-semibold"><FaTrash size={20} color="white"/>Limpar</button>
 
-          <button onClick={(e) => handleSubmitPost(e)} className="py-3 px-10 bg-light-yellow w-44 rounded-lg duration-200 ease-in-out hover:opacity-80 active:scale-50 text-gray-900 font-semibold">Criar</button>
+          <button onClick={(e) => handleSubmitPost(e)} className="flex items-center p-0 justify-center w-20 h-20 rounded-full sm:py-3 px-10 bg-light-yellow sm:w-44 sm:rounded-lg duration-200 ease-in-out hover:opacity-80 active:scale-50 text-gray-900 font-semibold">Criar</button>
         </div>
     </div>
   )

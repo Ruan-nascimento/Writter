@@ -29,6 +29,9 @@ export default {
       },
       maxWidth: {
         '13': '1300px'
+      },
+      screens: {
+        '850': '850px'
       }
     },
   },

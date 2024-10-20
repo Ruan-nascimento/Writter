@@ -23,7 +23,7 @@ export function Perfil() {
     }}
 
   return(
-    <div className="w-full h-full rounded-xl bg-gray-800 p-5 no-scrollbar overflow-auto bg-scroll">
+    <div className="pb-10 850:w-full 850:pb-5 h-full rounded-xl bg-gray-800 p-5 no-scrollbar overflow-auto bg-scroll">
       <div className="flex justify-between h-full gap-10">
         
         <section className="flex flex-col gap-4 w-3pc justify-center max-w-3pc">
@@ -34,7 +34,7 @@ export function Perfil() {
               className="absolute rounded-full bg-transparent w-full h-full  opacity-0 cursor-pointer"
               type="file" accept="image/*" onChange={handleImageChange}/>
               
-              <div className="w-full h-full flex items-center justify-center">
+              <div className="w-44 h-44 flex items-center justify-center lg:w-72 lg:h-72">
                 {preview ? (
                 <img 
                 className="w-full h-full rounded-full border-4  border-light-yellow object-cover"
@@ -58,7 +58,7 @@ export function Perfil() {
 
         </section>
         
-        <section className="border-2 border-light-yellow p-4 flex-1 rounded-lg flex flex-col gap-10">
+        <section className="p-4 flex-1 rounded-lg flex flex-col gap-10 850:border-light-yellow 850:border-2">
 
               <div className="w-full h-2pc flex justify-around items-center">
                 <List num={25} title="Curtidas"/>
@@ -66,26 +66,24 @@ export function Perfil() {
                 <List num={15} title="Salvos"/>
               </div>
 
-              <div className="flex gap-4">
-                <Input placeholder={`Ruan`} type={`text`}/>
-                <Input placeholder={`Carlos`} type={`text`}/>
+              <div className="flex flex-col gap-4 850:flex-row">
+                <Input full placeholder={`Ruan`} type={`text`}/>
+                <Input full placeholder={`Carlos`} type={`text`}/>
               </div>
               <div className="flex gap-4">
                 <Input type={'text'} placeholder="@Shottinn"/>
                 <Input type={`date`}/>
               </div>
-              <div className="flex gap-4">
-                <Input evite={true} placeholder={`ruan@gmail.com`} type={`email`}/>
-                <Input evite={true} placeholder={`************`} type={`password`}/>
+              <div className="flex flex-col gap-4 850:flex-row">
+                <Input full evite={true} placeholder={`ruan@gmail.com`} type={`email`}/>
+                <Input full evite={true} placeholder={`************`} type={`password`}/>
               </div>
 
               <div className="flex gap-4 justify-around">
                 <ButtonsOut save name={`Salvar`}/>
-                <ButtonsOut name={`Excluir Conta`}/>
+                <ButtonsOut name={`Excluir`}/>
                 <ButtonsOut name={`Sair`}/>
               </div>
-
-              <p className="w-full h-full overflow-hidden text-xs text-light-yellow">{footerText}</p>
 
         </section>
 

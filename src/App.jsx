@@ -4,7 +4,7 @@ import { Home } from "./components/home"
 function App() {
 
   return (
-    <div className="max-w-13 w-9pc h-screen m-auto py-4">
+    <div className="w-full 850:max-w-13 850:w-9pc h-screen m-auto py-4">
       <Home/>
     </div>
   )
