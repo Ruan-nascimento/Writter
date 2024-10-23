@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-neutral-950
+}
+
+input:-webkit-autofill {
+  background-color: #18181B;
+  color: #f0f0f0;
+  transition: background-color 5000s ease-in-out 0s; 
+}
+input:-webkit-autofill:focus {
+  background-color: #18181B; /* Manter a cor ao focar */
+  color: #f0f0f0;
+}
+
+.no-scrollbar::-webkit-scrollbar{
+  display: none;
+}

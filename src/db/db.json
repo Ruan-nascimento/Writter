@@ -1,0 +1,221 @@
+{
+  "posts": 
+    [
+      {
+        "id": "1",
+        "nome": "Ana Silva",
+        "titulo": "Reflexões sobre a vida",
+        "postagem": "A vida é uma jornada cheia de *descobertas*. Cada passo nos ensina algo novo.",
+        "hashtags": ["#reflexão", "#vida", "#jornada"],
+        "likes": 23,
+        "comentarios": 5
+      },
+      {
+        "id": "2",
+        "nome": "Carlos Oliveira",
+        "titulo": "O valor da amizade",
+        "postagem": "A amizade é um dos *maiores tesouros* que podemos ter. Valorize sempre os amigos ao seu lado.",
+        "hashtags": ["#amizade", "#valores"],
+        "likes": 15,
+        "comentarios": 3
+      },
+      {
+        "id": "3",
+        "nome": "Maria Costa",
+        "titulo": "Sonhos e metas",
+        "postagem": "Sonhar é o primeiro passo para *realizar*. Nunca deixe de acreditar nos seus sonhos.",
+        "hashtags": ["#sonhos", "#metas", "#inspiracao"],
+        "likes": 30,
+        "comentarios": 8
+      },
+      {
+        "id": "4",
+        "nome": "João Pereira",
+        "titulo": "A beleza da natureza",
+        "postagem": "A natureza nos presenteia com *cenas incríveis*. Aproveite cada momento ao ar livre.",
+        "hashtags": ["#natureza", "#beleza"],
+        "likes": 40,
+        "comentarios": 10
+      },
+      {
+        "id": "5",
+        "nome": "Laura Santos",
+        "titulo": "A importância do autoconhecimento",
+        "postagem": "Conhecer a si mesmo é fundamental para *crescer*. Dedique um tempo para se entender.",
+        "hashtags": ["#autoconhecimento", "#crescimento"],
+        "likes": 18,
+        "comentarios": 4
+      },
+      {
+        "id": "6",
+        "nome": "Ricardo Almeida",
+        "titulo": "Momentos felizes",
+        "postagem": "Os pequenos momentos trazem *grande alegria*. Não os deixe passar.",
+        "hashtags": ["#felicidade", "#momentos"],
+        "likes": 25,
+        "comentarios": 7
+      },
+      {
+        "id": "7",
+        "nome": "Fernanda Lima",
+        "titulo": "Viagens que transformam",
+        "postagem": "Viajar é uma forma de *expandir horizontes*. Cada destino tem sua magia.",
+        "hashtags": ["#viagem", "#aventura"],
+        "likes": 35,
+        "comentarios": 9
+      },
+      {
+        "id": "8",
+        "nome": "Lucas Martins",
+        "titulo": "Desenvolvimento pessoal",
+        "postagem": "O autodesenvolvimento é um caminho para a *realização*. Invista em si mesmo.",
+        "hashtags": ["#desenvolvimento", "#pessoal"],
+        "likes": 22,
+        "comentarios": 6
+      },
+      {
+        "id": "9",
+        "nome": "Juliana Rocha",
+        "titulo": "A beleza da arte",
+        "postagem": "A arte é uma expressão do *sentir*. Deixe-se levar pela criatividade.",
+        "hashtags": ["#arte", "#criatividade"],
+        "likes": 28,
+        "comentarios": 5
+      },
+      {
+        "id": "10",
+        "nome": "Rafael Souza",
+        "titulo": "Importância da saúde mental",
+        "postagem": "Cuidar da saúde mental é essencial para uma *vida equilibrada*.",
+        "hashtags": ["#saúdemental", "#equilíbrio"],
+        "likes": 19,
+        "comentarios": 4
+      },
+      {
+        "id": "11",
+        "nome": "Patrícia Dias",
+        "titulo": "Lições da natureza",
+        "postagem": "A natureza nos ensina a *adaptar-se*. Aprenda com ela.",
+        "hashtags": ["#natureza", "#lições"],
+        "likes": 31,
+        "comentarios": 7
+      },
+      {
+        "id": "12",
+        "nome": "Mateus Carvalho",
+        "titulo": "Caminhando para o futuro",
+        "postagem": "Cada passo é um avanço na direção dos *seus sonhos*. Não pare de caminhar.",
+        "hashtags": ["#futuro", "#sonhos"],
+        "likes": 26,
+        "comentarios": 6
+      },
+      {
+        "id": "13",
+        "nome": "Bianca Mendes",
+        "titulo": "A importância da leitura",
+        "postagem": "Ler abre portas para *novos mundos*. Nunca subestime o poder de um bom livro.",
+        "hashtags": ["#leitura", "#conhecimento"],
+        "likes": 34,
+        "comentarios": 8
+      },
+      {
+        "id": "14",
+        "nome": "Leonardo Ferreira",
+        "titulo": "A magia do cinema",
+        "postagem": "O cinema é uma arte que nos transporta para *outras realidades*. Aproveite cada filme.",
+        "hashtags": ["#cinema", "#arte"],
+        "likes": 29,
+        "comentarios": 5
+      },
+      {
+        "id": "15",
+        "nome": "Sofia Gomes",
+        "titulo": "A força da gratidão",
+        "postagem": "A gratidão transforma *pequenos momentos* em grandes lembranças.",
+        "hashtags": ["#gratidão", "#momentos"],
+        "likes": 24,
+        "comentarios": 6
+      },
+      {
+        "id": "16",
+        "nome": "Gabriel Lima",
+        "titulo": "Reflexões sobre o amor",
+        "postagem": "O amor é a força que *move o mundo*. Cultive-o sempre.",
+        "hashtags": ["#amor", "#reflexões"],
+        "likes": 42,
+        "comentarios": 10
+      },
+      {
+        "id": "17",
+        "nome": "Carla Alves",
+        "titulo": "Desafios da vida",
+        "postagem": "Enfrentar desafios é o que nos torna *mais fortes*. Não desista.",
+        "hashtags": ["#desafios", "#força"],
+        "likes": 20,
+        "comentarios": 4
+      },
+      {
+        "id": "18",
+        "nome": "Pedro Costa",
+        "titulo": "O poder da música",
+        "postagem": "A música tem o poder de *transformar emoções*. Escute sempre.",
+        "hashtags": ["#música", "#emoções"],
+        "likes": 38,
+        "comentarios": 7
+      },
+      {
+        "id": "19",
+        "nome": "Tamires Rocha",
+        "titulo": "A beleza do cotidiano",
+        "postagem": "Aprecie a *beleza* que está ao seu redor todos os dias.",
+        "hashtags": ["#cotidiano", "#beleza"],
+        "likes": 27,
+        "comentarios": 5
+      },
+      {
+        "id": "20",
+        "nome": "André Mendes",
+        "titulo": "O impacto das palavras",
+        "postagem": "Palavras têm o poder de *mudar vidas*. Escolha-as com cuidado.",
+        "hashtags": ["#palavras", "#impacto"],
+        "likes": 33,
+        "comentarios": 6
+      },
+      {
+        "id": "21",
+        "nome": "Tatiane Santos",
+        "titulo": "A força do hábito",
+        "postagem": "Os hábitos moldam quem somos. Foque nos *hábitos positivos*.",
+        "hashtags": ["#hábitos", "#foco"],
+        "likes": 18,
+        "comentarios": 3
+      },
+      {
+        "id": "22",
+        "nome": "Fábio Almeida",
+        "titulo": "A alegria de viver",
+        "postagem": "Viver é um presente. Aproveite cada *momento* intensamente.",
+        "hashtags": ["#vida", "#alegria"],
+        "likes": 39,
+        "comentarios": 9
+      },
+      {
+        "id": "23",
+        "nome": "Clara Nunes",
+        "titulo": "Aprendizados diários",
+        "postagem": "Todo dia é uma nova oportunidade para *aprender*. Esteja aberto.",
+        "hashtags": ["#aprendizado", "#oportunidades"],
+        "likes": 21,
+        "comentarios": 4
+      },
+      {
+        "id": "24",
+        "nome": "Henrique Silva",
+        "titulo": "A busca pela paz",
+        "postagem": "Encontre a paz interior em meio ao *caos* da vida.",
+        "hashtags": ["#paz", "#interior"],
+        "likes": 17,
+        "comentarios": 2
+      }
+      ]
+      }
