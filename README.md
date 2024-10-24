@@ -1,50 +1,97 @@
-# React + TypeScript + Vite
+# ✍️ Writter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **Writter**! This is an open-source project designed for learning and developing skills in **React JS**, **Vite**, and **Tailwind CSS**. The app's main goal is to provide a simple social platform where users can share short messages, such as **poems**, **thoughts**, and **personal reflections**. Feel free to explore, contribute, and improve!
 
-Currently, two official plugins are available:
+## 🌟 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 📝 **Post your thoughts**: Share anything from deep thoughts, poetry, or random musings.
+- 💬 **Real-time updates**: See posts from other users as they share their thoughts.
+- 🌐 **Profile customization**: Create a profile, add a display name, profile picture, and personal bio.
+- ❤️ **Like posts**: Show your appreciation for posts with a heart.
+- 💾 **Save favorites**: Save the posts you love the most.
+- 🔍 **Search**: Easily find posts or users.
+  
+## 🚀 Technologies
 
-## Expanding the ESLint configuration
+This project is built with the following technologies:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React JS**: A JavaScript library for building user interfaces.
+- **Vite**: A next-generation frontend tool that provides fast development and optimized builds.
+- **Tailwind CSS**: A utility-first CSS framework for styling with ease.
 
-- Configure the top-level `parserOptions` property like this:
+## 🎯 Purpose
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+The primary purpose of **Writter** is to be a practice project for learning **React JS** along with Vite and Tailwind. It's intended for beginners and anyone looking to contribute to an open-source social app.
+
+## 💡 Getting Started
+
+Follow these steps to set up the project on your local machine:
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Ruan-nascimento/Writter.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+cd Writter
 ```
+
+```bash
+npm install
+```
+
+## 📂 Project Structure
+Here’s a quick overview of the project structure:
+
+```bash
+/src
+  /components      # Reusable components
+  /pages           # Application pages (Home, Profile, Post)
+  /assets          # Images, fonts, and other static files
+  /utils           # Helper functions
+
+```
+
+## 🤝 Contributions
+
+Contributions are welcome! If you have any ideas to improve the app or would like to fix an issue, feel free to submit a pull request.
+
+Fork the repository
+Create your feature branch: 
+```bash
+git checkout -b feature-name
+```
+
+Commit your changes: git
+```bash
+commit -m 'Add some feature'
+```
+
+Push to the branch: 
+```bash
+git push origin feature-name
+```
+Open a pull request
+
+## 🔧 Commands
+
+Here are some useful commands for working with the project:
+
+Run the development server: 
+```bash
+npm run dev
+```
+
+Build for production: 
+```bash
+npm run build
+```
+
+Preview the production build: 
+```bash
+npm run preview
+```
+
+## 🛠️ Open-Source License
+This project is licensed under the MIT License – you're free to use, modify, and distribute it.
